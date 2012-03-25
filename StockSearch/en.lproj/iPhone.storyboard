@@ -37,7 +37,7 @@
                             <searchBar contentMode="redraw" barStyle="blackOpaque" placeholder="Enter Ticker Symbol" showsCancelButton="YES" id="s1l-G9-1SG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
                                     <string>Title</string>
@@ -73,7 +73,7 @@
                                     <navigationItem title="Set Allocation" id="qob-BP-qKK">
                                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="h7C-QW-UVs">
                                             <connections>
-                                                <segue destination="2" kind="modal" id="cxb-zW-Kyx"/>
+                                                <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="cxb-zW-Kyx"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -171,7 +171,7 @@
                                     <navigationItem title="My Portfolio" id="zs3-Ug-Kxr">
                                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="w9K-ZH-bJJ">
                                             <connections>
-                                                <segue destination="2" kind="modal" id="fg2-6T-hEu"/>
+                                                <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="fg2-6T-hEu"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -392,7 +392,6 @@
         <class className="StockSearchViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/StockSearchViewController.h"/>
             <relationships>
-                <relationship kind="action" name="cancel:"/>
                 <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
                 <relationship kind="outlet" name="symbolsSearchView" candidateClass="UITableView"/>
             </relationships>

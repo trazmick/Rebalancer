@@ -24,11 +24,15 @@
 
 - (void)viewDidLoad
 {
-//    self.title = @"Search stocks";
+    [searchBar becomeFirstResponder];
     self.symbolSearch = [YFStockSymbolSearch symbolSearchWithDelegate:self];
     [super viewDidLoad];
 }
 
+- (void)searchBarSearchButtonClicked:(UISearchBar *)aSearchBar
+{
+    [aSearchBar resignFirstResponder];
+}
 
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar 
 {    
@@ -68,13 +72,6 @@
     }
 }
 
-
-- (void)searchBarSearchButtonClicked:(UISearchBar *)aSearchBar
-{
-    [aSearchBar resignFirstResponder];
-}
-
-
 #pragma mark - UITableView delegate methods
 // Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -104,7 +101,7 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     if (self.stockSymbols == nil && indexPath.row == 2) {
-        cell.textLabel.text = @"Search for your stocks or mutual funds";
+        cell.textLabel.text = @"Type a company name or stock ID";
         cell.textLabel.font = [UIFont systemFontOfSize:14.0];
         cell.textLabel.textAlignment = UITextAlignmentCenter;
         cell.textLabel.textColor = [UIColor lightGrayColor];
