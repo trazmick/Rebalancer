@@ -30,6 +30,11 @@
 }
 
 
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar 
+{    
+    [self dismissModalViewControllerAnimated:YES];
+}
+
 #pragma mark - YFStockSymbolSearch delegate methods
 
 - (void)symbolSearchDidFinish:(YFStockSymbolSearch *)symbolFinder
@@ -99,13 +104,13 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     if (self.stockSymbols == nil && indexPath.row == 2) {
-        cell.textLabel.text = @"Start typing in the search box to find stocks!";
+        cell.textLabel.text = @"Search for your stocks or mutual funds";
         cell.textLabel.font = [UIFont systemFontOfSize:14.0];
         cell.textLabel.textAlignment = UITextAlignmentCenter;
         cell.textLabel.textColor = [UIColor lightGrayColor];
     }
     else if ([self.stockSymbols count] == 0 && indexPath.row == 2) {
-        cell.textLabel.text = @"No stocks match your search";
+        cell.textLabel.text = @"No stocks or symbols match your search";
         cell.textLabel.font = [UIFont systemFontOfSize:14.0];
         cell.textLabel.textAlignment = UITextAlignmentCenter;
         cell.textLabel.textColor = [UIColor lightGrayColor];
