@@ -537,6 +537,7 @@
 				2C47DA43151EE8D500D97B6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

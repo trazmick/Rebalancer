@@ -5,11 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1173"/>
     </dependencies>
     <scenes>
-        <!--Stock Search View Controller-->
+        <!--Stock Search View Controller - Stock Search-->
         <scene sceneID="5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="StockSearchViewController" sceneMemberID="viewController">
+                <viewController title="Stock Search" id="2" customClass="StockSearchViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -57,7 +57,7 @@
         <scene sceneID="yWW-kj-Mtx">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DnG-p1-7xD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="MOo-5b-qjx" customClass="AllocationViewController" sceneMemberID="viewController">
+                <viewController title="Allocation" id="MOo-5b-qjx" customClass="AllocationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hk4-67-oIS">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -155,7 +155,7 @@
         <scene sceneID="Ph8-N6-ecP">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="18S-Xh-GZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="g5Z-Te-Pq7" customClass="InvestmentsViewController" sceneMemberID="viewController">
+                <viewController title="Investments" id="g5Z-Te-Pq7" customClass="InvestmentsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V3c-jO-yrd">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -263,7 +263,8 @@
                 <tabBarController definesPresentationContext="YES" id="XRB-yy-P7T" sceneMemberID="viewController">
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Cz5-Og-TRl">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -282,7 +283,7 @@
         <scene sceneID="npX-xc-D4s">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdz-Dz-H2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="osG-WK-bgT" customClass="SettingsViewController" sceneMemberID="viewController">
+                <viewController title="Settings" id="osG-WK-bgT" customClass="SettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ybm-cx-dQG">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -363,6 +364,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings.png" id="UBi-IK-Xfe"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1007" y="208"/>
@@ -397,6 +399,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="cxb-zW-Kyx"/>
+        <segue reference="fg2-6T-hEu"/>
     </inferredMetricsTieBreakers>
 </document>
