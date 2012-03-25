@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad
 {
-    self.title = @"Search stocks";
+//    self.title = @"Search stocks";
     self.symbolSearch = [YFStockSymbolSearch symbolSearchWithDelegate:self];
     [super viewDidLoad];
 }
@@ -53,9 +53,10 @@
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
-    if (searchText != nil && [searchText length] > 2) {
+    if (searchText != nil && [searchText length] > 0) { 
         [self.symbolSearch findSymbols:searchText];
     }
+    //number of characters typed before stock results are show
     else {
         self.stockSymbols = nil;
         [self.symbolsSearchView reloadData];
@@ -114,8 +115,8 @@
         YFStockSymbol *symbol = [self.stockSymbols objectAtIndex:indexPath.row];
         cell.textLabel.text = [NSString stringWithFormat:@"%@ (%@)", symbol.name, symbol.symbol];
         cell.textLabel.textAlignment = UITextAlignmentLeft;
-        //        cell.textLabel.font = [UIFont systemFontOfSize:18.0];
-        //        cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+               cell.textLabel.font = [UIFont systemFontOfSize:18.0];
+               cell.selectionStyle = UITableViewCellSelectionStyleBlue;
     }
     else {
         cell.textLabel.text = @"";
