@@ -239,8 +239,7 @@
 				2C47DA5D151EEAB300D97B6F /* YFStockSymbolSearch.h */,
 				2C47DA5E151EEAB300D97B6F /* YFStockSymbolSearch.m */,
 			);
-			name = BSYahooFinance;
-			path = ../YahooFinance/BSYahooFinance;
+			path = BSYahooFinance;
 			sourceTree = "<group>";
 		};
 		2C47DA51151EEAB300D97B6F /* Entities */ = {
@@ -263,8 +262,7 @@
 				2C47DDBC151EECA100D97B6F /* ASI */,
 				2C47DDD1151EECA100D97B6F /* JSON */,
 			);
-			name = Externals;
-			path = ../Rebalancer/Externals;
+			path = Externals;
 			sourceTree = "<group>";
 		};
 		2C47DDB9151EECA100D97B6F /* Apple */ = {
