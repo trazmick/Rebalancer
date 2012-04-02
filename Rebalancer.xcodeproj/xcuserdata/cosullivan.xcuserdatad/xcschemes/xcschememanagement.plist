@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ArcFree.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Rebalancer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -20,6 +25,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>2C47DA22151EE8D500D97B6F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2C4CD6291529656500F49385</key>
 		<dict>
 			<key>primary</key>
 			<true/>

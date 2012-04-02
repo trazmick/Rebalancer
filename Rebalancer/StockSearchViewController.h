@@ -17,7 +17,7 @@
     NSArray *stockSymbols;
 }
 
-@property (nonatomic, retain) IBOutlet UITableView *symbolsSearchView;
-@property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
+@property (nonatomic, strong) IBOutlet UITableView *symbolsSearchView;
+@property (nonatomic, strong) IBOutlet UISearchBar *searchBar;
 
 @end
