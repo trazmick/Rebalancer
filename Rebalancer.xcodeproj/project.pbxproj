@@ -53,14 +53,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C47DA23151EE8D500D97B6F /* StockSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C47DA23151EE8D500D97B6F /* Rebalancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rebalancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C47DA27151EE8D500D97B6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2C47DA29151EE8D500D97B6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2C47DA2B151EE8D500D97B6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2C47DA2F151EE8D500D97B6F /* StockSearch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StockSearch-Info.plist"; sourceTree = "<group>"; };
+		2C47DA2F151EE8D500D97B6F /* Rebalancer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rebalancer-Info.plist"; sourceTree = "<group>"; };
 		2C47DA31151EE8D500D97B6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C47DA33151EE8D500D97B6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2C47DA35151EE8D500D97B6F /* StockSearch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StockSearch-Prefix.pch"; sourceTree = "<group>"; };
+		2C47DA35151EE8D500D97B6F /* Rebalancer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rebalancer-Prefix.pch"; sourceTree = "<group>"; };
 		2C47DA36151EE8D500D97B6F /* StockSearchAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockSearchAppDelegate.h; sourceTree = "<group>"; };
 		2C47DA37151EE8D500D97B6F /* StockSearchAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockSearchAppDelegate.m; sourceTree = "<group>"; };
 		2C47DA3A151EE8D500D97B6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone.storyboard; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 			children = (
 				2C47DDB8151EECA100D97B6F /* Externals */,
 				2C47DA4F151EEAB300D97B6F /* BSYahooFinance */,
-				2C47DA2D151EE8D500D97B6F /* StockSearch */,
+				2C47DA2D151EE8D500D97B6F /* Rebalancer */,
 				2C47DA26151EE8D500D97B6F /* Frameworks */,
 				2C47DA24151EE8D500D97B6F /* Products */,
 			);
@@ -171,7 +171,7 @@
 		2C47DA24151EE8D500D97B6F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C47DA23151EE8D500D97B6F /* StockSearch.app */,
+				2C47DA23151EE8D500D97B6F /* Rebalancer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,7 +190,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2C47DA2D151EE8D500D97B6F /* StockSearch */ = {
+		2C47DA2D151EE8D500D97B6F /* Rebalancer */ = {
 			isa = PBXGroup;
 			children = (
 				2C47DA36151EE8D500D97B6F /* StockSearchAppDelegate.h */,
@@ -206,7 +206,7 @@
 				2C47DE96151EFF9400D97B6F /* SettingsViewController.m */,
 				2C47DA2E151EE8D500D97B6F /* Supporting Files */,
 			);
-			path = StockSearch;
+			path = Rebalancer;
 			sourceTree = "<group>";
 		};
 		2C47DA2E151EE8D500D97B6F /* Supporting Files */ = {
@@ -218,10 +218,10 @@
 				2C47DE9A151F005600D97B6F /* allocation.png */,
 				2C47DE9B151F005600D97B6F /* investments.png */,
 				2C47DE9C151F005600D97B6F /* settings.png */,
-				2C47DA2F151EE8D500D97B6F /* StockSearch-Info.plist */,
+				2C47DA2F151EE8D500D97B6F /* Rebalancer-Info.plist */,
 				2C47DA30151EE8D500D97B6F /* InfoPlist.strings */,
 				2C47DA33151EE8D500D97B6F /* main.m */,
-				2C47DA35151EE8D500D97B6F /* StockSearch-Prefix.pch */,
+				2C47DA35151EE8D500D97B6F /* Rebalancer-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -330,9 +330,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C47DA22151EE8D500D97B6F /* StockSearch */ = {
+		2C47DA22151EE8D500D97B6F /* Rebalancer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C47DA41151EE8D500D97B6F /* Build configuration list for PBXNativeTarget "StockSearch" */;
+			buildConfigurationList = 2C47DA41151EE8D500D97B6F /* Build configuration list for PBXNativeTarget "Rebalancer" */;
 			buildPhases = (
 				2C47DA1F151EE8D500D97B6F /* Sources */,
 				2C47DA20151EE8D500D97B6F /* Frameworks */,
@@ -342,9 +342,9 @@
 			);
 			dependencies = (
 			);
-			name = StockSearch;
+			name = Rebalancer;
 			productName = StockSearch;
-			productReference = 2C47DA23151EE8D500D97B6F /* StockSearch.app */;
+			productReference = 2C47DA23151EE8D500D97B6F /* Rebalancer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -357,7 +357,7 @@
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = trazmick;
 			};
-			buildConfigurationList = 2C47DA1D151EE8D500D97B6F /* Build configuration list for PBXProject "StockSearch" */;
+			buildConfigurationList = 2C47DA1D151EE8D500D97B6F /* Build configuration list for PBXProject "Rebalancer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -370,7 +370,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C47DA22151EE8D500D97B6F /* StockSearch */,
+				2C47DA22151EE8D500D97B6F /* Rebalancer */,
 			);
 		};
 /* End PBXProject section */
@@ -498,10 +498,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StockSearch/StockSearch-Prefix.pch";
-				INFOPLIST_FILE = "StockSearch/StockSearch-Info.plist";
+				GCC_PREFIX_HEADER = "Rebalancer/Rebalancer-Prefix.pch";
+				INFOPLIST_FILE = "Rebalancer/Rebalancer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Rebalancer;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -511,10 +511,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StockSearch/StockSearch-Prefix.pch";
-				INFOPLIST_FILE = "StockSearch/StockSearch-Info.plist";
+				GCC_PREFIX_HEADER = "Rebalancer/Rebalancer-Prefix.pch";
+				INFOPLIST_FILE = "Rebalancer/Rebalancer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Rebalancer;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -523,7 +523,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C47DA1D151EE8D500D97B6F /* Build configuration list for PBXProject "StockSearch" */ = {
+		2C47DA1D151EE8D500D97B6F /* Build configuration list for PBXProject "Rebalancer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C47DA3F151EE8D500D97B6F /* Debug */,
@@ -532,7 +532,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C47DA41151EE8D500D97B6F /* Build configuration list for PBXNativeTarget "StockSearch" */ = {
+		2C47DA41151EE8D500D97B6F /* Build configuration list for PBXNativeTarget "Rebalancer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C47DA42151EE8D500D97B6F /* Debug */,
