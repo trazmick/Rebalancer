@@ -353,7 +353,7 @@
 		2C47DA1A151EE8D500D97B6F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = StockSearch;
+				CLASSPREFIX = Rebalancer;
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = trazmick;
 			};
