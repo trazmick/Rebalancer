@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "StockSearchAppDelegate.h"
+#import "RebalancerAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([StockSearchAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([RebalancerAppDelegate class]));
     }
 }

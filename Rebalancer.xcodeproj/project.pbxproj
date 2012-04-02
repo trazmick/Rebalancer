@@ -12,7 +12,7 @@
 		2C47DA2C151EE8D500D97B6F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C47DA2B151EE8D500D97B6F /* CoreGraphics.framework */; };
 		2C47DA32151EE8D500D97B6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C47DA30151EE8D500D97B6F /* InfoPlist.strings */; };
 		2C47DA34151EE8D500D97B6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47DA33151EE8D500D97B6F /* main.m */; };
-		2C47DA38151EE8D500D97B6F /* StockSearchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47DA37151EE8D500D97B6F /* StockSearchAppDelegate.m */; };
+		2C47DA38151EE8D500D97B6F /* RebalancerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47DA37151EE8D500D97B6F /* RebalancerAppDelegate.m */; };
 		2C47DA3B151EE8D500D97B6F /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C47DA39151EE8D500D97B6F /* iPhone.storyboard */; };
 		2C47DA3E151EE8D500D97B6F /* StockSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47DA3D151EE8D500D97B6F /* StockSearchViewController.m */; };
 		2C47DA4A151EEA4900D97B6F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C47DA44151EE9F500D97B6F /* MobileCoreServices.framework */; };
@@ -61,8 +61,8 @@
 		2C47DA31151EE8D500D97B6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C47DA33151EE8D500D97B6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C47DA35151EE8D500D97B6F /* Rebalancer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rebalancer-Prefix.pch"; sourceTree = "<group>"; };
-		2C47DA36151EE8D500D97B6F /* StockSearchAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockSearchAppDelegate.h; sourceTree = "<group>"; };
-		2C47DA37151EE8D500D97B6F /* StockSearchAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockSearchAppDelegate.m; sourceTree = "<group>"; };
+		2C47DA36151EE8D500D97B6F /* RebalancerAppDelegate.h */ = {isa = PBXFileReference; path = RebalancerAppDelegate.h; sourceTree = "<group>"; };
+		2C47DA37151EE8D500D97B6F /* RebalancerAppDelegate.m */ = {isa = PBXFileReference; path = RebalancerAppDelegate.m; sourceTree = "<group>"; };
 		2C47DA3A151EE8D500D97B6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone.storyboard; sourceTree = "<group>"; };
 		2C47DA3C151EE8D500D97B6F /* StockSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockSearchViewController.h; sourceTree = "<group>"; };
 		2C47DA3D151EE8D500D97B6F /* StockSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockSearchViewController.m; sourceTree = "<group>"; };
@@ -193,8 +193,8 @@
 		2C47DA2D151EE8D500D97B6F /* Rebalancer */ = {
 			isa = PBXGroup;
 			children = (
-				2C47DA36151EE8D500D97B6F /* StockSearchAppDelegate.h */,
-				2C47DA37151EE8D500D97B6F /* StockSearchAppDelegate.m */,
+				2C47DA36151EE8D500D97B6F /* RebalancerAppDelegate.h */,
+				2C47DA37151EE8D500D97B6F /* RebalancerAppDelegate.m */,
 				2C47DA39151EE8D500D97B6F /* iPhone.storyboard */,
 				2C47DA3C151EE8D500D97B6F /* StockSearchViewController.h */,
 				2C47DA3D151EE8D500D97B6F /* StockSearchViewController.m */,
@@ -400,7 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C47DA34151EE8D500D97B6F /* main.m in Sources */,
-				2C47DA38151EE8D500D97B6F /* StockSearchAppDelegate.m in Sources */,
+				2C47DA38151EE8D500D97B6F /* RebalancerAppDelegate.m in Sources */,
 				2C47DA3E151EE8D500D97B6F /* StockSearchViewController.m in Sources */,
 				2C47DA5F151EEAB300D97B6F /* YFStockDetails.m in Sources */,
 				2C47DA60151EEAB300D97B6F /* YFStockSymbol.m in Sources */,
