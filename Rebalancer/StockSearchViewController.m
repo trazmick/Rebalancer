@@ -127,14 +127,16 @@
     return cell;
 }
 
+// SELECT STOCK FROM SEARCH STARTS HERE!
+
 //- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 //{
-//    [self.searchBar resignFirstResponder];
+//    //[self.searchBar resignFirstResponder];
 //    
 //    YFStockSymbol *symbol = [self.stockSymbols objectAtIndex:indexPath.row];
 //
 //    if (symbol) {
-//        DetailsViewController *detailViewController = [[DetailsViewController alloc] initWithNibName:@"DetailsViewController" bundle:nil];
+//        InvestmentsViewController *detailViewController = [[InvestmentsViewController alloc] initWithNibName:@"InvestmentsViewController" bundle:nil];
 //        detailViewController.stockSymbol = [self.stockSymbols objectAtIndex:indexPath.row];
 //        [self.navigationController pushViewController:detailViewController animated:YES];
 //        [detailViewController release];
