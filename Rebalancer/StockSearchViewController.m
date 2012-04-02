@@ -12,8 +12,8 @@
 //#import "DetailsViewController.h"
 
 @interface StockSearchViewController()
-@property (nonatomic, retain) YFStockSymbolSearch *symbolSearch;
-@property (nonatomic, retain) NSArray *stockSymbols;
+@property (nonatomic, strong) YFStockSymbolSearch *symbolSearch;
+@property (nonatomic, strong) NSArray *stockSymbols;
 @end
 
 @implementation StockSearchViewController
