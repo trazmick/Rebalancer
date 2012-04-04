@@ -98,31 +98,31 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    
-    if (self.stockSymbols == nil && indexPath.row == 2) {
-        cell.textLabel.text = @"Type a company name or stock ID";
-        cell.textLabel.font = [UIFont systemFontOfSize:14.0];
-        cell.textLabel.textAlignment = UITextAlignmentCenter;
-        cell.textLabel.textColor = [UIColor lightGrayColor];
-    }
-    else if ([self.stockSymbols count] == 0 && indexPath.row == 2) {
-        cell.textLabel.text = @"No stocks or symbols match your search";
-        cell.textLabel.font = [UIFont systemFontOfSize:14.0];
-        cell.textLabel.textAlignment = UITextAlignmentCenter;
-        cell.textLabel.textColor = [UIColor lightGrayColor];
-    }
-    else if ([self.stockSymbols count] > 0) {
-        cell.textLabel.textColor = [UIColor blackColor];
-        YFStockSymbol *symbol = [self.stockSymbols objectAtIndex:indexPath.row];
-        cell.textLabel.text = [NSString stringWithFormat:@"%@ (%@)", symbol.name, symbol.symbol];
-        cell.textLabel.textAlignment = UITextAlignmentLeft;
-               cell.textLabel.font = [UIFont systemFontOfSize:18.0];
-               cell.selectionStyle = UITableViewCellSelectionStyleBlue;
-    }
-    else {
-        cell.textLabel.text = @"";
-    }
+//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//    
+//    if (self.stockSymbols == nil && indexPath.row == 2) {
+//        cell.textLabel.text = @"Type a company name or stock ID";
+//        cell.textLabel.font = [UIFont systemFontOfSize:14.0];
+//        cell.textLabel.textAlignment = UITextAlignmentCenter;
+//        cell.textLabel.textColor = [UIColor lightGrayColor];
+//    }
+//    else if ([self.stockSymbols count] == 0 && indexPath.row == 2) {
+//        cell.textLabel.text = @"No stocks or symbols match your search";
+//        cell.textLabel.font = [UIFont systemFontOfSize:14.0];
+//        cell.textLabel.textAlignment = UITextAlignmentCenter;
+//        cell.textLabel.textColor = [UIColor lightGrayColor];
+//    }
+//    else if ([self.stockSymbols count] > 0) {
+//        cell.textLabel.textColor = [UIColor blackColor];
+//        YFStockSymbol *symbol = [self.stockSymbols objectAtIndex:indexPath.row];
+//        cell.textLabel.text = [NSString stringWithFormat:@"%@ (%@)", symbol.name, symbol.symbol];
+//        cell.textLabel.textAlignment = UITextAlignmentLeft;
+//               cell.textLabel.font = [UIFont systemFontOfSize:18.0];
+//               cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+//    }
+//    else {
+//        cell.textLabel.text = @"";
+//    }
     
     return cell;
 }
