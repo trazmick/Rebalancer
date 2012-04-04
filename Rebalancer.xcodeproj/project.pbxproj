@@ -23,7 +23,6 @@
 		2C47DA60151EEAB300D97B6F /* YFStockSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47DA55151EEAB300D97B6F /* YFStockSymbol.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2C47DA61151EEAB300D97B6F /* YFTwoValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47DA57151EEAB300D97B6F /* YFTwoValueObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2C47DA62151EEAB300D97B6F /* StockExchangeCurrency.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C47DA58151EEAB300D97B6F /* StockExchangeCurrency.plist */; };
-		2C47DA63151EEAB300D97B6F /* YFCurrencyConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47DA5A151EEAB300D97B6F /* YFCurrencyConversion.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2C47DA64151EEAB300D97B6F /* YFStockDetailsLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47DA5C151EEAB300D97B6F /* YFStockDetailsLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2C47DA65151EEAB300D97B6F /* YFStockSymbolSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47DA5E151EEAB300D97B6F /* YFStockSymbolSearch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2C47DDE5151EECA100D97B6F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47DDBB151EECA100D97B6F /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -61,8 +60,8 @@
 		2C47DA31151EE8D500D97B6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C47DA33151EE8D500D97B6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C47DA35151EE8D500D97B6F /* Rebalancer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rebalancer-Prefix.pch"; sourceTree = "<group>"; };
-		2C47DA36151EE8D500D97B6F /* RebalancerAppDelegate.h */ = {isa = PBXFileReference; path = RebalancerAppDelegate.h; sourceTree = "<group>"; };
-		2C47DA37151EE8D500D97B6F /* RebalancerAppDelegate.m */ = {isa = PBXFileReference; path = RebalancerAppDelegate.m; sourceTree = "<group>"; };
+		2C47DA36151EE8D500D97B6F /* RebalancerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RebalancerAppDelegate.h; sourceTree = "<group>"; };
+		2C47DA37151EE8D500D97B6F /* RebalancerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RebalancerAppDelegate.m; sourceTree = "<group>"; };
 		2C47DA3A151EE8D500D97B6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone.storyboard; sourceTree = "<group>"; };
 		2C47DA3C151EE8D500D97B6F /* StockSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockSearchViewController.h; sourceTree = "<group>"; };
 		2C47DA3D151EE8D500D97B6F /* StockSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockSearchViewController.m; sourceTree = "<group>"; };
@@ -78,8 +77,6 @@
 		2C47DA56151EEAB300D97B6F /* YFTwoValueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFTwoValueObject.h; sourceTree = "<group>"; };
 		2C47DA57151EEAB300D97B6F /* YFTwoValueObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFTwoValueObject.m; sourceTree = "<group>"; };
 		2C47DA58151EEAB300D97B6F /* StockExchangeCurrency.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StockExchangeCurrency.plist; sourceTree = "<group>"; };
-		2C47DA59151EEAB300D97B6F /* YFCurrencyConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCurrencyConversion.h; sourceTree = "<group>"; };
-		2C47DA5A151EEAB300D97B6F /* YFCurrencyConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCurrencyConversion.m; sourceTree = "<group>"; };
 		2C47DA5B151EEAB300D97B6F /* YFStockDetailsLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFStockDetailsLoader.h; sourceTree = "<group>"; };
 		2C47DA5C151EEAB300D97B6F /* YFStockDetailsLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFStockDetailsLoader.m; sourceTree = "<group>"; };
 		2C47DA5D151EEAB300D97B6F /* YFStockSymbolSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFStockSymbolSearch.h; sourceTree = "<group>"; };
@@ -232,8 +229,6 @@
 				2C47DA50151EEAB300D97B6F /* BSYahooFinance.h */,
 				2C47DA51151EEAB300D97B6F /* Entities */,
 				2C47DA58151EEAB300D97B6F /* StockExchangeCurrency.plist */,
-				2C47DA59151EEAB300D97B6F /* YFCurrencyConversion.h */,
-				2C47DA5A151EEAB300D97B6F /* YFCurrencyConversion.m */,
 				2C47DA5B151EEAB300D97B6F /* YFStockDetailsLoader.h */,
 				2C47DA5C151EEAB300D97B6F /* YFStockDetailsLoader.m */,
 				2C47DA5D151EEAB300D97B6F /* YFStockSymbolSearch.h */,
@@ -405,7 +400,6 @@
 				2C47DA5F151EEAB300D97B6F /* YFStockDetails.m in Sources */,
 				2C47DA60151EEAB300D97B6F /* YFStockSymbol.m in Sources */,
 				2C47DA61151EEAB300D97B6F /* YFTwoValueObject.m in Sources */,
-				2C47DA63151EEAB300D97B6F /* YFCurrencyConversion.m in Sources */,
 				2C47DA64151EEAB300D97B6F /* YFStockDetailsLoader.m in Sources */,
 				2C47DA65151EEAB300D97B6F /* YFStockSymbolSearch.m in Sources */,
 				2C47DDE5151EECA100D97B6F /* Reachability.m in Sources */,
