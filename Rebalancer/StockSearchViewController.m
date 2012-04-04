@@ -9,7 +9,7 @@
 //
 
 #import "StockSearchViewController.h"
-//#import "DetailsViewController.h"
+#import "InvestmentsViewController.h"
 
 @interface StockSearchViewController()
 @property (nonatomic, strong) YFStockSymbolSearch *symbolSearch;
@@ -127,19 +127,19 @@
     return cell;
 }
 
-// SELECT STOCK FROM SEARCH STARTS HERE!
+// SELECT STOCK FROM SEARCH STARTS HERE!  COMMENT THIS OUT TO RUN W/O CRASHING
 
 //- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 //{
-//    //[self.searchBar resignFirstResponder];
+//    [self.searchBar resignFirstResponder];
 //    
 //    YFStockSymbol *symbol = [self.stockSymbols objectAtIndex:indexPath.row];
 //
 //    if (symbol) {
-//        InvestmentsViewController *detailViewController = [[InvestmentsViewController alloc] initWithNibName:@"InvestmentsViewController" bundle:nil];
-//        detailViewController.stockSymbol = [self.stockSymbols objectAtIndex:indexPath.row];
-//        [self.navigationController pushViewController:detailViewController animated:YES];
-//        [detailViewController release];
+//        InvestmentsViewController *investmentViewController = [[InvestmentsViewController alloc] initWithNibName:@"InvestmentsViewController" bundle:nil];
+//        investmentViewController.stockSymbol = [self.stockSymbols objectAtIndex:indexPath.row];
+//        [self.navigationController pushViewController:investmentViewController animated:YES];
+//        [investmentViewController release];
 //    }
 //    
 //    [self.symbolsSearchView deselectRowAtIndexPath:indexPath animated:YES];
