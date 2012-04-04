@@ -256,9 +256,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Investments" image="investments.png" id="mTh-ro-GVh"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="view" destination="c5C-UF-FzZ" id="F9V-BH-W1p"/>
-                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="527" y="-357"/>

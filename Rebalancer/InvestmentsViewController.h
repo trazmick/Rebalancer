@@ -11,3 +11,21 @@
 @interface InvestmentsViewController : UIViewController
 
 @end
+
+// BEGIN CODE FROM BSYahooFinance DetailsViewController.h
+
+//#import <UIKit/UIKit.h>
+//#import "BSYahooFinance.h"
+//
+//@interface InvestmentsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, YFStockDetailsLoaderDelegate> {
+//    UITableView *stockDetails;
+//    YFStockSymbol *symbol;
+//    YFStockDetailsLoader *detailsLoader;
+//    NSArray *detailKeys;
+//}
+//
+//@property (nonatomic, strong) IBOutlet UITableView *stockDetails;
+//@property (nonatomic, strong) YFStockSymbol *stockSymbol;
+//
+//@end
+
