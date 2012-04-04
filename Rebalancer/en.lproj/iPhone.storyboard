@@ -250,12 +250,19 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="g5Z-Te-Pq7" id="Mzk-jd-uWG"/>
+                                    <outlet property="delegate" destination="g5Z-Te-Pq7" id="jTJ-bZ-QJu"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Investments" image="investments.png" id="mTh-ro-GVh"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="stockDetails" destination="8IY-4s-1Sz" id="dHf-Es-mOh"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="527" y="-357"/>
@@ -385,6 +392,9 @@
         </class>
         <class className="InvestmentsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/InvestmentsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="stockDetails" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="SettingsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
