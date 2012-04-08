@@ -108,11 +108,6 @@
 }
 
 #pragma mark - UITableView delegate methods
-// Customize the number of sections in the table view.
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -126,7 +121,7 @@
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"Individual Investment";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
@@ -134,12 +129,12 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
-    if (self.detailsLoader.stockDetails == nil && indexPath.row == 2) {
-        cell.textLabel.text = @"Retrieving details, please wait...";
-        cell.textLabel.font = [UIFont systemFontOfSize:14.0];
-        cell.textLabel.textAlignment = UITextAlignmentCenter;
-        cell.textLabel.textColor = [UIColor lightGrayColor];
-    }
+//    if (self.detailsLoader.stockDetails == nil && indexPath.row == 2) {
+//        cell.textLabel.text = @"Retrieving details, please wait...";
+//        cell.textLabel.font = [UIFont systemFontOfSize:14.0];
+//        cell.textLabel.textAlignment = UITextAlignmentCenter;
+//        cell.textLabel.textColor = [UIColor lightGrayColor];
+//    }
     else if ([self.detailKeys count] > 0) {
         cell.textLabel.textColor = [UIColor blackColor];
         NSString *str = [self.detailsLoader.stockDetails.detailsDictionary objectForKey:[self.detailKeys objectAtIndex:indexPath.row]];
