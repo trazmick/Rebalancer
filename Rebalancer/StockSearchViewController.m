@@ -122,7 +122,7 @@
     return cell;
 }
 
-// SELECT STOCK FROM SEARCH STARTS HERE!  COMMENT THIS OUT TO RUN W/O CRASHING
+// SELECT STOCK FROM SEARCH STARTS HERE!
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
