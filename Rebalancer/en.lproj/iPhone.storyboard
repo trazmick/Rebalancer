@@ -52,11 +52,11 @@
                     <connections>
                         <outlet property="searchBar" destination="s1l-G9-1SG" id="BsT-1a-J75"/>
                         <outlet property="symbolsSearchView" destination="e0d-gM-MkV" id="S6e-OV-DT0"/>
-                        <segue destination="g5Z-Te-Pq7" kind="modal" id="Pit-j0-OTL"/>
+                        <segue destination="g5Z-Te-Pq7" kind="modal" identifier="Add Stock" modalTransitionStyle="flipHorizontal" id="Pit-j0-OTL"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1113" y="-471"/>
+            <point key="canvasLocation" x="1007" y="-357"/>
         </scene>
         <!--Allocation View Controller - Allocation-->
         <scene sceneID="yWW-kj-Mtx">
@@ -74,7 +74,7 @@
                                     <navigationItem title="Set Allocation" id="qob-BP-qKK">
                                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="h7C-QW-UVs">
                                             <connections>
-                                                <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="vkB-yt-EbV"/>
+                                                <segue destination="2" kind="modal" identifier="Add Stock" modalTransitionStyle="flipHorizontal" id="vkB-yt-EbV"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
