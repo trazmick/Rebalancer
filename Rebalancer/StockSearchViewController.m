@@ -113,7 +113,7 @@
         cell.textLabel.text = [NSString stringWithFormat:@"%@ (%@)", symbol.name, symbol.symbol];
         cell.textLabel.textAlignment = UITextAlignmentLeft;
                cell.textLabel.font = [UIFont systemFontOfSize:18.0];
-               cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+               cell.selectionStyle = UITableViewCellSelectionStyleGray;
     }
     else {
         cell.textLabel.text = @"";
