@@ -49,6 +49,9 @@
 		2C47DEA0151F005600D97B6F /* allocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C47DE9A151F005600D97B6F /* allocation.png */; };
 		2C47DEA1151F005600D97B6F /* investments.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C47DE9B151F005600D97B6F /* investments.png */; };
 		2C47DEA2151F005600D97B6F /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C47DE9C151F005600D97B6F /* settings.png */; };
+		2CCEDC841532080B003D80B7 /* InvestmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47DE91151EFF7C00D97B6F /* InvestmentsViewController.m */; };
+		2CCEDC8615320838003D80B7 /* AllocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47DE93151EFF7D00D97B6F /* AllocationViewController.m */; };
+		2CCEDC8715320838003D80B7 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47DE96151EFF9400D97B6F /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -394,6 +397,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CCEDC8615320838003D80B7 /* AllocationViewController.m in Sources */,
+				2CCEDC8715320838003D80B7 /* SettingsViewController.m in Sources */,
+				2CCEDC841532080B003D80B7 /* InvestmentsViewController.m in Sources */,
 				2C47DA34151EE8D500D97B6F /* main.m in Sources */,
 				2C47DA38151EE8D500D97B6F /* RebalancerAppDelegate.m in Sources */,
 				2C47DA3E151EE8D500D97B6F /* StockSearchViewController.m in Sources */,

@@ -99,7 +99,7 @@
 
 - (void)stockDetailsDidFail:(YFStockDetailsLoader *)aDetailsLoader
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Details failed" 
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Stock failed to load" 
                                                     message:[aDetailsLoader.error localizedDescription] 
                                                    delegate:nil 
                                           cancelButtonTitle:@"OK" 
