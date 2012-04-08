@@ -84,7 +84,6 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    self.title = self.stockSymbol.name;
     self.detailsLoader = [YFStockDetailsLoader loaderWithDelegate:self];
     [self.detailsLoader loadDetails:self.stockSymbol.symbol];
 }

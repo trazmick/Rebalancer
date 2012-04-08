@@ -27,9 +27,6 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <connections>
-                                            <segue destination="MOo-5b-qjx" kind="modal" id="ZeE-2q-YLB"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -55,10 +52,11 @@
                     <connections>
                         <outlet property="searchBar" destination="s1l-G9-1SG" id="BsT-1a-J75"/>
                         <outlet property="symbolsSearchView" destination="e0d-gM-MkV" id="S6e-OV-DT0"/>
+                        <segue destination="g5Z-Te-Pq7" kind="modal" id="Pit-j0-OTL"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1007" y="-357"/>
+            <point key="canvasLocation" x="1113" y="-471"/>
         </scene>
         <!--Allocation View Controller - Allocation-->
         <scene sceneID="yWW-kj-Mtx">
@@ -76,7 +74,7 @@
                                     <navigationItem title="Set Allocation" id="qob-BP-qKK">
                                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="h7C-QW-UVs">
                                             <connections>
-                                                <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="cxb-zW-Kyx"/>
+                                                <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="vkB-yt-EbV"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -349,13 +347,34 @@
         <image name="investments.png" width="26" height="26"/>
         <image name="settings.png" width="26" height="26"/>
     </resources>
+    <classes>
+        <class className="AllocationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AllocationViewController.h"/>
+        </class>
+        <class className="InvestmentsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InvestmentsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="stockDetails" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="SettingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+        </class>
+        <class className="StockSearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StockSearchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="symbolsSearchView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fg2-6T-hEu"/>
-        <segue reference="ZeE-2q-YLB"/>
+        <segue reference="vkB-yt-EbV"/>
+        <segue reference="Pit-j0-OTL"/>
     </inferredMetricsTieBreakers>
 </document>

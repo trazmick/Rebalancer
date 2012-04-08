@@ -124,21 +124,22 @@
 
 // SELECT STOCK FROM SEARCH STARTS HERE!  COMMENT THIS OUT TO RUN W/O CRASHING
 
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    [self.searchBar resignFirstResponder];
-//    
-//    YFStockSymbol *symbol = [self.stockSymbols objectAtIndex:indexPath.row];
-//
-//    if (symbol) {
-//        InvestmentsViewController *investmentViewController = [[InvestmentsViewController alloc] initWithNibName:@"InvestmentsViewController" bundle:nil];
-//        investmentViewController.stockSymbol = [self.stockSymbols objectAtIndex:indexPath.row];
-//        [self.navigationController pushViewController:investmentViewController animated:YES];
-//        [investmentViewController release];
-//    }
-//    
-//    [self.symbolsSearchView deselectRowAtIndexPath:indexPath animated:YES];
-//}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //commenting out this keeps the cancel button active on searchbar, not sure how UI should be yet
+    //[self.searchBar resignFirstResponder];
+    
+    YFStockSymbol *symbol = [self.stockSymbols objectAtIndex:indexPath.row];
+
+    if (symbol) {
+        InvestmentsViewController *investmentViewController = [[InvestmentsViewController alloc] initWithNibName:@"InvestmentsViewController" bundle:nil];
+        investmentViewController.stockSymbol = [self.stockSymbols objectAtIndex:indexPath.row];
+        [self.navigationController presentModalViewController:investmentViewController animated:YES];
+        [investmentViewController release];
+    }
+    
+    [self.symbolsSearchView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 
 #pragma mark - Memory management
