@@ -134,7 +134,7 @@
     if (symbol) {
         InvestmentsViewController *investmentViewController = [[InvestmentsViewController alloc] initWithNibName:@"InvestmentsViewController" bundle:nil];
         investmentViewController.stockSymbol = [self.stockSymbols objectAtIndex:indexPath.row];
-        [self.navigationController presentModalViewController:investmentViewController animated:YES];
+        [self dismissModalViewControllerAnimated:YES]; //flip modal view back
         [investmentViewController release];
     }
     
